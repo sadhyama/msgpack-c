@@ -22,6 +22,12 @@ SET (libdir "\${exec_prefix}/lib")
 SET (includedir "\${prefix}/include")
 SET (GNUCXX_STD_SUPPORT_VERSION "4.3")
 
+set( CMAKE_SYSTEM_NAME Linux )
+set( CMAKE_SYSTEM_PROCESSOR arm )
+set( CMAKE_C_COMPILER gcc-arm-linux-gnueabi )
+set( CMAKE_CXX_COMPILER g++-arm-linux-gnueabi )
+set( CMAKE_ASM_COMPILER gcc-arm-linux-gnueabi )
+
 OPTION (MSGPACK_CXX11 "Using c++11 compiler" OFF)
 OPTION (MSGPACK_32BIT "32bit compile" OFF)
 OPTION (MSGPACK_BOOST "Using boost libraries" OFF)
